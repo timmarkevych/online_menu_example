@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d003f22ee1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="online-menu-example.css">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper mobile-header">
+            <div class="alignment">
+                <div class="left alignment">
+                    <img class="logo" loading="lazy" src="https://cdn-media.choiceqr.com/prod-eat-verywellcafe-lv/logo/thumbnail_gCRRfIl-xsIHHxX-kiCtLr_D-p-p.png" alt="">
+                    <div class="description">
+                        <h1 class="adress">Very Well Cafe, New York 89th square</h1>
+                        <p class="restaurant">restaurant - <a href="">change location</a></p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="dropdown">
+                        <a class="btn header-btn dropdown-toggle icon-header" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600; font-size: 14px; padding: 12px 22px;">UK</a>
+                        <button class="btn header-btn icon-header hide-mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <a class="btn header-btn icon-header hide-mobile" href="#"><i class="fa-regular fa-user"></i></a>
+                        <a class="btn header-btn icon-header" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="under-header">
+        <div class="wrapper">
+            <div class="alignment">
+                <div class="under-header-links">
+                    <div class="under-header-link-alignment">
+                        <a href="#" class="under-header-link">Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <form action="">
+        <div class="review-modal" id="review-modal">
+            <h1>Leave your review here</h1>
+            <textarea class="review-input" name="" id="" cols="30" rows="10"></textarea>
+            <p class="review-text">
+                Your feedback is invaluable to us. We genuinely care about your reviews and use them to enhance our services. Thank you for helping us improve and grow.
+            </p>
+            <button type="submit" class="close-review" id="">Send the review</button>
+            <button type="button" class="close-review" id="close-modal"><i class="fa-solid fa-chevron-up"></i></button>
+        </div>
+    </form>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="autorisation" style="height: 58px;">
+                <div style="width: 40px;" class="autorisation-item autorisation-icon"><i class="fa-regular fa-user"></i></div>
+                <div style="width: fit-content;" class="autorisation-item"><h4 class="list-header" style="font-weight: 700;">Authorise</h4></div>
+                <div style="width: 50%;" class="autorisation-item autorisation-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="autorisation-description">
+                <p><strong>Authorise</strong> to simplify the ordering process and use additional functions.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><div class="list-with-icon">
+                    <a href="" class="list-text">change location</a>
+                    <div class="list-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                </div></li>
+            </ul>
+            <h5 class="list-header">Contacts</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item py-0">
+                    <div class="tripple-icon" style="height: 58px;">
+                        <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-regular fa-user"></i></div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">89th square, New York, USA</div>
+                        <div class="tripple-icon-item tripple-icon-end"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    </div>
+                </li>
+                <li class="list-group-item py-0">
+                    <div class="tripple-icon" style="height: 58px;">
+                        <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">097 378 0825</div>
+                    </div>
+                </li>
+            </ul>
+            <h5 class="list-header">Our social media</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item py-0">
+                    <div class="tripple-icon" style="height: 58px;">
+                        <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-brands fa-facebook"></i></div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">Facebook</div>
+                        <div class="tripple-icon-item tripple-icon-end"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    </div>
+                </li>
+                <li class="list-group-item py-0">
+                    <div class="tripple-icon" style="height: 58px;">
+                        <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">Instagram</div>
+                        <div class="tripple-icon-item tripple-icon-end"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    </div>
+                </li>
+                <li class="list-group-item py-0">
+                    <div class="tripple-icon" style="height: 58px;">
+                        <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-brands fa-facebook"></i></div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">Facebook</div>
+                        <div class="tripple-icon-item tripple-icon-end"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    </div>
+                </li>
+                <li class="list-group-item py-0">
+                    <div class="tripple-icon" style="height: 58px;">
+                        <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-regular fa-file"></i></div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">Information about company</div>
+                        <div class="tripple-icon-item tripple-icon-end"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </li>
+                <li class="list-group-item py-0">
+                    <div class="tripple-icon" style="height: 58px;">
+                        <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-regular fa-file"></i></div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">Cookie politics</div>
+                        <div class="tripple-icon-item tripple-icon-end"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </li>
+                <li class="list-group-item py-0">
+                    <div class="tripple-icon" style="height: 58px;">
+                        <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-regular fa-file"></i></div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">Terms of use</div>
+                        <div class="tripple-icon-item tripple-icon-end"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </li>
+                <li class="list-group-item py-0">
+                    <div class="tripple-icon" style="height: 58px;">
+                        <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-regular fa-file"></i></div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">Privacy policy</div>
+                        <div class="tripple-icon-item tripple-icon-end"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </li>
+              </ul>
+        </div>
+      </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-location-changer-offcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <main>
+        <div class="wrapper">
+            <div class="container-fluid image-centring"><img loading="lazy" class="head-image" src="website-main-image.jpeg" alt=""></div>
+            <div class="mobile-description">
+                <h1 class="mobile-heading">Very Well Cafe, New York 89th square</h1>
+                <p class="mobile-location-changer">Restaurant</p>
+            </div>
+            <div class="wrapper-menu container-fluid">
+                <div class="row menu-grid">
+                    <div class="col-sm-12 col-lg-3 col-md-4 filters-part">
+                        <h3>
+                            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+                                <nav class="nav nav-pills flex-column"> 
+                                    <div class="row in-the-house-block desktop-navigation">
+                                        <div class="col-2"><a class="nav-link in-the-house " href=""><i class="fa-solid fa-utensils"></i></a></div>
+                                        <div class="col-10"><a class="nav-link in-the-house" href=""> In the restaurant</a></div>
+                                    </div>
+                                    <a class="nav-link desktop-navigation" href=""><i class="fa-solid fa-star"></i> Popular</a>
+                                    <p class="sub-text desktop-navigation" style="padding-bottom: 5px;"><strong>menu:</strong></p>
+                                    <div class="mobile-navigational-block">
+                                        <a class="nav-link" href="">BREAKFASTS</a>
+                                        <p class="sub-text">from 11:00 a.m. to 1:00 p.m</p>
+                                    </div>
+                                </nav>
+                                <nav class="nav nav-pills flex-column">
+                                    <div class="mobile-navigational-block">
+                                        <a class="nav-link" href="#menu">BUSINESS LUNCH - USD 6.50</a>
+                                        <p class="sub-text ">on WEEKDAYS from 12:00 to 16:00</p></div>
+                                </nav>
+                                <nav class="nav nav-pills flex-column">
+                                <a class="nav-link" href="#menu">MENU</a>
+                                    <nav class="nav nav-pills flex-column desktop-navigation">
+                                        <a class="nav-link ms-3 my-1" href="#snacks-and-salads">APPETIZERS AND SALADS</a>
+                                        <a class="nav-link ms-3 my-1" href="#soups">SOUPS</a>
+                                        <a class="nav-link ms-3 my-1" href="#raviolie">RAVIOLI</a>
+                                    </nav>
+                                </nav>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link" href="">BAR</a>
+                                </nav>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link" href="">Wine</a>
+                                </nav>
+                                <div class="resizing">
+                                    <input placeholder="Назва страви" class="food-search search" type="text">
+                                    <div class="mobile-content-managment">
+                                        <h6 class="nav-heading">Description of the menu</h6>
+                                        <p class="menu-description">Dear guests, if you have an allergy or intolerance to certain products, inform your waiter about it</p>
+                                        <h6 class="nav-heading">Information about the institution</h6>
+                                        <div class="row">
+                                            <div class="col-12 row full-piece">
+                                                <div class="col-2 icon-block"><i class="fa-solid fa-clock"></i></div>
+                                                <div class="col-10 text-full-piece">
+                                                    <h6 class="additional-info">Working hours:</h6>
+                                                    <h5 class="additional-info-text">11:00 - 23:00</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 row full-piece">
+                                                <div class="col-2 icon-block"><i class="fa-solid fa-map-location-dot"></i></div>
+                                                <div class="col-10 text-full-piece">
+                                                    <h6 class="additional-info">Address:</h6>
+                                                    <h5 class="additional-info-text">New York 89th square</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 row full-piece">
+                                                <div class="col-2 icon-block"><i class="fa-solid fa-phone"></i></div>
+                                                <div class="col-10 text-full-piece">
+                                                    <h6 class="additional-info">phone number</h6>
+                                                    <h5 class="additional-info-text">097 378 0825</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </h3>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 col-md-8 menu-part">
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                            <div class="menu" id="menu">
+                                <div class="menu-category card" id="snacks-and-salads">
+                                    <div class="card-header">
+                                        <h1 class="card-title">APPETIZERS AND SALADS</h1>
+                                    </div>
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Caprese Salad</h4>
+                                                <h6 class="card-title price">7.99 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 200g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col">
+                                                <img src="caprese-salad.jpg" class="food-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Bruschetta</h4>
+                                                <h6 class="card-title price">4.74 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 170g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Medium-spicy</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col ">
+                                                <img src="Bruschetta with guacamole, roasted peppers, and sun-dried tomatoes.jpg" class="food-img image-section" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Mushroom Risotto</h4>
+                                                <h6 class="card-title price">10.99 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 300g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col">
+                                                <img src="Mushroom-risotto.jpg" class="food-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Spinach and Feta Stuffed Mushrooms</h4>
+                                                <h6 class="card-title price">6.49 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 150g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col">
+                                                <img src="spinach-and-feta-stuffed-mushrooms.jpg" class="food-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Vegetable Antipasto Platter</h4>
+                                                <h6 class="card-title price">12.99 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 400g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col">
+                                                <img src="Vegetable-Antipasto-Platter.jpg" class="food-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Crispy Polenta Fries</h4>
+                                                <h6 class="card-title price">8.49 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 250g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col">
+                                                <img src="Crispy-Polenta-Fries.jpg" class="food-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="menu-category card" id="soups">
+                                    <div class="card-header">
+                                        <h1 class="card-title">Soups</h1>
+                                    </div>
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Tomato Basil Soup</h4>
+                                                <h6 class="card-title price">5.99 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 300g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col">
+                                                <img src="Tomato-Basil-Soup.jpg" class="food-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Butternut Squash Soup</h4>
+                                                <h6 class="card-title price">6.49 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 300g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col">
+                                                <img src="Butternut-Squash-Soup.jpg" class="food-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-category card" id="raviolie">
+                                    <div class="card-header">
+                                        <h1 class="card-title">Raviolie</h1>
+                                    </div>
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Cheese Ravioli with Marinara Sauce</h4>
+                                                <h6 class="card-title price">9.99 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 250g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col">
+                                                <img src="Cheese-Ravioli-with-Marinara-Sauce.jpeg" class="food-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body menu-row">
+                                        <div class="card-body menu-row">
+                                            <div class="menu-col">
+                                                <h4 class="card-title searchable-element">Spinach and Ricotta Ravioli with Pesto Cream Sauce</h4>
+                                                <h6 class="card-title price">11.49 USD</h6>
+                                                <div class="food-info">
+                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 250g</p>
+                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
+                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
+                                                </div>
+                                                <br>
+                                                <div class="like-btn">
+                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-col">
+                                                <img src="Spinach and Ricotta Ravioli with Pesto Cream Sauce.jpg" class="food-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3 col-md-6 search-part">
+                        <div class="search-part-wrapper">
+                            <input placeholder="dish name" class="food-search search" type="text">
+                            <h6 class="nav-heading">menu description</h6>
+                            <p class="menu-description">Dear guests, if you have an allergy or intolerance to certain products, inform your waiter about it</p>
+                            <h6 class="nav-heading">Information about the restaurant</h6>
+                            <div class="row">
+                                <div class="col-12 row full-piece">
+                                    <div class="col-2 icon-block"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="col-10 text-full-piece">
+                                        <h6 class="additional-info">Working hours:</h6>
+                                        <h5 class="additional-info-text">11:00 - 23:00</h5>
+                                    </div>
+                                </div>
+                                <div class="col-12 row full-piece">
+                                    <div class="col-2 icon-block"><i class="fa-solid fa-map-location-dot"></i></div>
+                                    <div class="col-10 text-full-piece">
+                                        <h6 class="additional-info">Adress:</h6>
+                                        <h5 class="additional-info-text">New York 89th square</h5>
+                                    </div>
+                                </div>
+                                <div class="col-12 row full-piece">
+                                    <div class="col-2 icon-block"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="col-10 text-full-piece">
+                                        <h6 class="additional-info">phone number</h6>
+                                        <h5 class="additional-info-text">097 378 0825</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="row footer-width">
+                <div class="col-sm-12 col-lg-4 col-md-6" style="padding-right: 0;">
+                    <div class="footer-data">
+                        <h6 class="footer-header">Contacts</h6>
+                        <p>New York 89th square</p>
+                        <p>097 378 0825</p>
+                    </div>
+                    <h6 class="footer-header">Working hours</h6>
+                    <table class="work-time">
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td class="time-footer-table"><p>11:00 - 23:00</p></td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td class="time-footer-table"><p>11:00 - 23:00</p></td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td class="time-footer-table"><p>11:00 - 23:00</p></td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td class="time-footer-table"><p>11:00 - 23:00</p></td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td class="time-footer-table"><p>11:00 - 23:00</p></td> 
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td class="time-footer-table"><p>11:00 - 23:00</p></td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td class="time-footer-table"><p>11:00 - 23:00</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-12 col-lg-4 col-md-6" style="padding-right: 0;">
+                    <div class="footer-data">
+                        <h6 class="footer-header">Our social media</h6>
+                        <a style="font-size: 20px; margin-right: 8px;"><i class="fa-brands fa-facebook"></i></a> <a href="">Facebook</a>
+                        <br>
+                        <a style="font-size: 20px; margin-right: 8px;"><i class="fa-brands fa-tiktok"></i></a> <a href="">TikTok</a>
+                        <br>
+                        <a style="font-size: 20px; margin-right: 8px;"><i class="fa-brands fa-instagram"></i></a> <a href="">Instagram</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 col-md-6 map-holder" style="padding-right: 0;">
+                    <h6 class="footer-header">On the map</h6>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2048.443467191267!2d9.72781618679912!3d52.36999305747519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b074bec5674a73%3A0xa0a91f320db69923!2sPfannkuchen%20Haus!5e0!3m2!1sru!2sde!4v1702422862652!5m2!1sru!2sde" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="online-menu-example-searching-algorithm.js"></script>
+    <script src="online-menu-example-review-function.js"></script>
+</body>
+</html>
