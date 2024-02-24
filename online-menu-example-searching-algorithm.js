@@ -14,9 +14,9 @@ function searchResult() {
         const elementText = searchableArray[i].textContent.toLowerCase();
 
         if (elementText.includes(searchValue)) {
-            searchableArray[i].parentElement.parentElement.style.display = "flex";
+            searchableArray[i].parentElement.parentElement.parentElement.style.display = "flex";
         } else {
-            searchableArray[i].parentElement.parentElement.style.display = "none";
+            searchableArray[i].parentElement.parentElement.parentElement.style.display = "none";
         }
     }
 
