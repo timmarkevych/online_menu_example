@@ -39,7 +39,8 @@ header{
 }
 
 .logo{
-    height: 56px;
+    height: 47px;
+    border-radius: 8px;
 }
 
 .adress{
@@ -164,12 +165,27 @@ main{
     width: 350px!important;
 }
 
+.carousel-control-box{
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,.7);
+}
+
+.carousel-caption{
+    background-color: rgba(0,0,0,.4);
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.carousel-caption > p{
+    margin: 0;
+}
+
 .image-centring{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 1280px;
-    padding: 0px 24px;
+    height: 650px;
     border-radius: 16px;
 }
 
@@ -178,6 +194,29 @@ main{
     height: 100%;
     object-fit: cover;
     border-radius: 16px;    
+}
+
+.carousel-item{
+    height: 650px;
+}
+
+.carousel-item > img{
+    height: 650px;
+}
+
+@media (max-width: 1282px){
+    .image-centring{
+        width: 100vw;
+        height: auto;
+    }
+    .carousel-item{
+        width: 100vw;
+        height: auto;
+    }
+    .carousel-item > img{
+        width: 100vw;
+        height: 100%;
+    }
 }
 
 .card{
@@ -609,7 +648,6 @@ footer{
     .image-centring{
         padding: 0 !important;
         width: 100vw !important;
-        height: 76vw;
         border-radius: 0 !important;
     }
 
