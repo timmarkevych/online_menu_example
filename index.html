@@ -24,16 +24,23 @@
                 </div>
                 <div class="right">
                     <div class="dropdown">
-                        <a class="btn header-btn dropdown-toggle icon-header" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600; font-size: 14px; padding: 12px 22px;">UK</a>
-                        <button class="btn header-btn icon-header hide-mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button id="dropdownToggle" class="btn header-btn icon-header" style="font-weight: 600; font-size: 14px; padding: 12px 22px;">UK <i class="fa-solid fa-chevron-down"></i></button>
                         <a class="btn header-btn icon-header hide-mobile" href="#"><i class="fa-regular fa-user"></i></a>
                         <a class="btn header-btn icon-header" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></a>
                       
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        
+                        <ul id="language-dropdown" class="dropdown-menu">
+                            <button class="dropdown-mobile-close" id="dropdown-mobile-close"><i class="fa-solid fa-xmark"></i></button>
+                            <h2 class="mobile-dropdown-heading">Menu language: <span>English</span></h2>
+                            <input placeholder="Search language" type="text" class="lanugage-input" id="lanugage-input">
+                            <li><p class="dropdown-item" >Translitions:</p></li>
+                            <div class="languages">
+                                <li><a class="dropdown-item current-language" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Spanish</a></li>
+                            </div>
                         </ul>
+
+
                     </div>
                 </div>
             </div>
@@ -51,14 +58,17 @@
         </div>
     </nav>
     <form action="">
+        <div class="background-modal" id="background-modal"></div>
         <div class="review-modal" id="review-modal">
-            <h1>Leave your review here</h1>
-            <textarea class="review-input" name="" id="" cols="30" rows="10"></textarea>
-            <p class="review-text">
-                Your feedback is invaluable to us. We genuinely care about your reviews and use them to enhance our services. Thank you for helping us improve and grow.
-            </p>
-            <button type="submit" class="close-review" id="">Send the review</button>
-            <button type="button" class="close-review" id="close-modal"><i class="fa-solid fa-chevron-up"></i></button>
+            <div class="first-modal-line">
+                <h1>Leave your response here</h1>
+                <button type="button" class="button-review close-review" id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <textarea placeholder="write your response right here" class="review-input" name="" id="" cols="15" rows="20"></textarea>
+            <div class="second-modal-line">
+                    <button type="submit" class="button-review" id="">Clear</button>
+                    <button type="submit" class="button-review send-review" id="">Send response</button>
+            </div>
         </div>
     </form>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -92,7 +102,7 @@
                 <li class="list-group-item py-0">
                     <div class="tripple-icon" style="height: 58px;">
                         <div style="width: 40px;" class="tripple-icon-item autorisation-icon"><i class="fa-solid fa-phone"></i></div>
-                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">000 000 0000</div>
+                        <div style="width: 244px;" class="tripple-icon-item tripple-icon-text">097 378 0825</div>
                     </div>
                 </li>
             </ul>
@@ -173,6 +183,7 @@
       </div>
     <main>
         <div class="wrapper">
+
             <div class="container-fluid image-centring">   <div id="carouselExampleCaptions" class="carousel slide head-image">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -246,7 +257,6 @@
                                     <nav class="nav nav-pills flex-column desktop-navigation">
                                         <a class="nav-link ms-3 my-1" href="#snacks-and-salads">APPETIZERS AND SALADS</a>
                                         <a class="nav-link ms-3 my-1" href="#soups">SOUPS</a>
-                                        <a class="nav-link ms-3 my-1" href="#raviolie">RAVIOLIE</a>
                                     </nav>
                                 </nav>
                                 <nav class="nav nav-pills flex-column">
@@ -256,7 +266,7 @@
                                     <a class="nav-link" href="">Wine</a>
                                 </nav>
                                 <div class="resizing">
-                                    <input placeholder="dish name" class="food-search search" type="text">
+                                    <input placeholder="Назва страви" class="food-search search" type="text">
                                     <div class="mobile-content-managment">
                                         <h6 class="nav-heading">Description of the menu</h6>
                                         <p class="menu-description">Dear guests, if you have an allergy or intolerance to certain products, inform your waiter about it</p>
@@ -280,7 +290,7 @@
                                                 <div class="col-2 icon-block"><i class="fa-solid fa-phone"></i></div>
                                                 <div class="col-10 text-full-piece">
                                                     <h6 class="additional-info">phone number</h6>
-                                                    <h5 class="additional-info-text">000 000 0000</h5>
+                                                    <h5 class="additional-info-text">097 378 0825</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -308,7 +318,7 @@
                                                 </div>
                                                 <br>
                                                 <div class="like-btn">
-                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><i class="fa-regular fa-comment"></i></div>
                                                     <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
                                                 </div>
                                             </div>
@@ -330,7 +340,7 @@
                                                 </div>
                                                 <br>
                                                 <div class="like-btn">
-                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
+                                                    <div class="like-btn-item"><i class="fa-regular fa-comment"></i></div>
                                                     <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
                                                 </div>
                                             </div>
@@ -472,53 +482,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="menu-category card" id="raviolie">
-                                    <div class="card-header">
-                                        <h1 class="card-title">Raviolie</h1>
-                                    </div>
-                                    <div class="card-body menu-row">
-                                        <div class="card-body menu-row">
-                                            <div class="menu-col">
-                                                <h4 class="card-title searchable-element">Cheese Ravioli with Marinara Sauce</h4>
-                                                <h6 class="card-title price">9.99 USD</h6>
-                                                <div class="food-info">
-                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 250g</p>
-                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
-                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
-                                                </div>
-                                                <br>
-                                                <div class="like-btn">
-                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
-                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
-                                                </div>
-                                            </div>
-                                            <div class="menu-col">
-                                                <img src="Cheese-Ravioli-with-Marinara-Sauce.jpeg" class="food-img" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body menu-row">
-                                        <div class="card-body menu-row">
-                                            <div class="menu-col">
-                                                <h4 class="card-title searchable-element">Spinach and Ricotta Ravioli with Pesto Cream Sauce</h4>
-                                                <h6 class="card-title price">11.49 USD</h6>
-                                                <div class="food-info">
-                                                    <p class="food-info-item"><i class="fa-solid fa-scale-balanced"></i> 250g</p>
-                                                    <p class="food-info-item"><i class="fa-brands fa-pagelines"></i> Vegetarian</p>
-                                                    <p class="food-info-item"><i class="fa-solid fa-pepper-hot"></i> Mild</p>
-                                                </div>
-                                                <br>
-                                                <div class="like-btn">
-                                                    <div class="like-btn-item"><i class="fa-regular fa-heart"></i></div>
-                                                    <div class="like-btn-item"><h6 class="like-amount">37</h6></div>
-                                                </div>
-                                            </div>
-                                            <div class="menu-col">
-                                                <img src="Spinach and Ricotta Ravioli with Pesto Cream Sauce.jpg" class="food-img" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -547,7 +511,7 @@
                                     <div class="col-2 icon-block"><i class="fa-solid fa-phone"></i></div>
                                     <div class="col-10 text-full-piece">
                                         <h6 class="additional-info">phone number</h6>
-                                        <h5 class="additional-info-text">000 000 0000</h5>
+                                        <h5 class="additional-info-text">097 378 0825</h5>
                                     </div>
                                 </div>
                             </div>
@@ -621,5 +585,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="online-menu-example-searching-algorithm.js"></script>
     <script src="online-menu-example-review-function.js"></script>
+    <script src="online-menu-example-dropdown-function.js"></script>
 </body>
 </html>
