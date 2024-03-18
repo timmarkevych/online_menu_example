@@ -2,6 +2,15 @@ const searchElements = document.getElementsByClassName("search");
 const searchableArray = document.getElementsByClassName("searchable-element");
 const menu_category = document.getElementsByClassName("menu-category");
 
+const close_dropdown = document.getElementById("dropdown-mobile-close");
+const dropdown = document.getElementById("language-dropdown");
+
+function dropdownClose(){
+    dropdown.classList.remove("show")
+}
+
+close_dropdown.addEventListener('click', dropdownClose)
+
 // Iterate over each search element
 for (let i = 0; i < searchElements.length; i++) {
     searchElements[i].addEventListener("input", searchResult);
