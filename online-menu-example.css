@@ -11,6 +11,18 @@
     --red-color: #cd5632;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--theme-colors-300);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--red-color); 
+}
+
 html{
     width: 100vw;
     overflow-x: hidden;
@@ -109,6 +121,13 @@ main{
 .wrapper{
     background-color: var(--theme-colors-100);
     width: 1280px;
+    display: flex;
+    flex-direction: column;
+}
+
+main > .wrapper{
+    align-items: center;
+    width: 100vw;
 }
 
 @media screen and (max-width: 1280px){
@@ -308,6 +327,7 @@ p.dropdown-item{
 }
 
 .heading-image-container{
+    width: 1280px;
     height: 150px !important;
     margin-bottom: 50px;
     background-image: url(https://www.musafir.com.ua/wp-content/themes/musafir/img/main-decor.svg);
@@ -320,12 +340,40 @@ p.dropdown-item{
     .heading-image-container{
         background-size: 100% !important;
     }
+
+    .food-list{
+        grid-template-columns: 50% 50% !important;
+    }
 }
 
 @media screen and (max-width: 760px){
     .heading-text{
         font-size: 52px !important;
         line-height: 60px !important;
+    }
+    
+    .food-list{
+        width: 100% !important;
+        grid-template-columns: 100% !important;
+    }
+    .food-card{
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px !important;
+    }
+    .food-image-container{
+        width: 30% !important;
+        order: 2;
+    }
+    .food-information{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .carousel-caption > p{
+        font-size: 12px;
+        margin-bottom: 0 !important;
     }
 }
 
@@ -349,6 +397,8 @@ p.dropdown-item{
 
 .carousel-control-box{
     padding: 10px 15px;
+    margin-right: 5px;
+    margin-left: 5px;
     border-radius: 8px;
     background-color: rgba(0,0,0,.7);
 }
@@ -356,7 +406,6 @@ p.dropdown-item{
 .carousel-caption{
     background-color: rgba(0,0,0,.4);
     border-radius: 16px;
-    margin-bottom: 20px;
 }
 
 .carousel-caption > p{
@@ -369,6 +418,10 @@ p.dropdown-item{
     justify-content: center;
     height: 650px;
     border-radius: 16px;
+}
+
+.carousel-container{
+    width: 1280px;
 }
 
 .head-image{
@@ -503,6 +556,8 @@ p.dropdown-item{
 .like-amount{
     margin: 0;
 }
+
+
 
 .filters-part > h3{
     position: -webkit-sticky;
@@ -938,6 +993,10 @@ footer{
     .map-holder{
         padding: 0;
     }
+
+    .scrollspy-navbar{
+        top: 0 !important;
+    }
 }
 
 .footer-width{
@@ -1103,4 +1162,91 @@ footer{
 .shadow-drop{
     box-shadow: 0 6px 6px rgba(0,0,0,.1);
     filter: drop-shadow(0 4px 4px rgba(0,0,0,.1));
+}
+
+body{
+    color: var(--theme-colors-700);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.food-list{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3334%;
+    row-gap: 50px;
+}
+
+.food-card{
+    padding: 15px;
+
+}
+
+.food-image{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.food-name{
+    margin: 0;
+}
+
+.food-details{
+    font-size: 14px;
+    color: var(--theme-colors-600);
+}
+
+.food-price{
+    color: var(--red-color);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.food-weight{
+    font-weight: 500;
+    color: var(--theme-colors-400);
+    font-size: 18px;
+    margin: 0;
+}
+
+.scrollspy-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scrollspy-navbar{
+    position: sticky;
+    top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--theme-colors-100);
+}
+
+.scrollspy-link{
+    border: 1px solid var(--theme-colors-400);
+    border-radius: 50px !important;
+    margin-inline: 5px;
+}
+
+.scrollspy-link:hover{
+    color: var(--theme-colors-900);
+    border-color: var(--red-color);
+}
+
+.scrollspy-link.active{
+    border: 1px solid var(--red-color);
+    background-color: var(--red-color);
+    color: var(--theme-colors-100) !important;
+}
+
+.food-section-description{
+    text-align: center;
 }
