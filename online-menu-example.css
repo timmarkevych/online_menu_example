@@ -360,6 +360,10 @@ p.dropdown-item{
         display: flex;
         flex-direction: row;
         padding-left: 20px !important;
+        border-top: 1px solid var(--theme-colors-400);
+    }
+    .food-card:last-child{
+        border-bottom: 1px solid var(--theme-colors-400);
     }
     .food-image-container{
         width: 30% !important;
@@ -374,6 +378,26 @@ p.dropdown-item{
     .carousel-caption > p{
         font-size: 12px;
         margin-bottom: 0 !important;
+    }
+
+    .food-section-description{
+        margin-bottom: 25px;
+    }
+    .food-section-heading{
+        margin-top: 20px;
+    }
+    
+    .scrollspy-navbar{
+        overflow-x: scroll;
+        justify-content: flex-start !important;
+    }
+
+    .inline-scrollspy{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        flex-wrap: nowrap;
     }
 }
 
