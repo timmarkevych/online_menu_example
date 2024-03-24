@@ -344,6 +344,11 @@ p.dropdown-item{
     .food-list{
         grid-template-columns: 50% 50% !important;
     }
+    
+    .go-back-button{
+        align-self: flex-start !important;
+        margin-left: 50px !important;
+    }
 }
 
 @media screen and (max-width: 760px){
@@ -401,6 +406,11 @@ p.dropdown-item{
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: nowrap;
+    }
+    .go-back-button{
+        align-self: flex-start !important;
+        margin-left: 21px !important;
+        padding-inline: 16px !important;
     }
 }
 
@@ -1351,7 +1361,8 @@ main{
     margin-bottom: 0;
     padding: 5px;
     align-self: flex-start;
-    padding-inline: 16px;
+    padding-inline: 48px;
+    margin-left: calc(12.5% + 15px);
     text-decoration: none;
     border-radius: 16px;
 }
