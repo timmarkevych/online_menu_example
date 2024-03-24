@@ -386,13 +386,13 @@ p.dropdown-item{
     .food-section-heading{
         margin-top: 20px;
     }
-    
-    .scrollspy-navbar{
-        overflow-x: scroll;
-        justify-content: flex-start !important;
+
+    .first-food-section-heading{
+        margin-top: 0 !important;
     }
+    
     .scrollspy-navbar {
-        overflow-x: scroll;
+        overflow-x: auto;
         justify-content: flex-start !important;
     }
 
@@ -1341,4 +1341,17 @@ main{
     align-items: center;
     font-size: 36px;
     padding-inline: 20px;
+}
+
+.go-back-button{
+    color: var(--theme-colors-100);
+    background-color: var(--red-color);
+    font-size: 24px;
+    margin: 20px;
+    margin-bottom: 0;
+    padding: 5px;
+    align-self: flex-start;
+    padding-inline: 16px;
+    text-decoration: none;
+    border-radius: 16px;
 }
