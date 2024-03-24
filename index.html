@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d003f22ee1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="online-menu-example.css">
+    <link rel="stylesheet" href="online-menu-example-food-aligment.css">
     <title>Menu</title>
 </head>
 <body>
@@ -57,20 +57,6 @@
             </div>
         </div>
     </nav>
-    <form action="">
-        <div class="background-modal" id="background-modal"></div>
-        <div class="review-modal" id="review-modal">
-            <div class="first-modal-line">
-                <h1>Leave your response here</h1>
-                <button type="button" class="button-review close-review" id="close-modal"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <textarea placeholder="write your response right here" class="review-input" name="" id="" cols="15" rows="20"></textarea>
-            <div class="second-modal-line">
-                    <button type="submit" class="button-review" id="">Clear</button>
-                    <button type="submit" class="button-review send-review" id="">Send response</button>
-            </div>
-        </div>
-    </form>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <button type="button" class="btn-close offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -222,134 +208,33 @@
                     </div>
                 </button>
               </div></div>
-            <nav id="navbar-example2" class="navbar px-3 mb-3 scrollspy-navbar">
-                <ul class="nav inline-scrollspy">
-                  <li class="nav-item">
-                    <a class="nav-link scrollspy-link" href="#Apetizers">Apetizers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scrollspy-link" href="#Salads">Salads</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scrollspy-link" href="#Apetizers2">Apetizers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scrollspy-link" href="#Salads2">Salads</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scrollspy-link" href="#Apetizers3">Apetizers</a>
-                  </li>
+              <div class="wrapper">
+
+                <ul class="food-categories">
+                    <a href="online-menu-example-food-aligment.html" class="food-category">
+                        <div class="food-category-text">
+                            <li class="food-category-heading">Dishes</li>
+                            <li class="food-category-description">Delicious main courses available from 11:00 AM to 9:30 PM</li>
+                        </div>
+                        <div class="food-category-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <a href="online-menu-example-food-aligment.html" class="food-category">
+                        <div class="food-category-text">
+                            <li class="food-category-heading">Beverages</li>
+                            <li class="food-category-description">Refreshing drinks to quench your thirst all day</li>
+                        </div>
+                        <div class="food-category-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <a href="online-menu-example-food-aligment.html" class="food-category">
+                        <div class="food-category-text">
+                            <li class="food-category-heading">Bar</li>
+                            <li class="food-category-description">Wide selection of alcoholic beverages available during opening hours</li>
+                        </div>
+                        <div class="food-category-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
                 </ul>
-              </nav>
-          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-wrapper" tabindex="0">
-            <h1 class="food-section-heading">Apetizers</h1>
-            <p class="food-section-description">Apetizers, the enticing prelude to any meal, ignite anticipation and set the stage for culinary delight, offering a tantalizing taste of what's to come.</p>
-            <div class="food-list" id="Apetizers">
-                <div class="food-card">
-                    <div class="food-image-container">
-                        <img src="guacamole-bruschetta.png" alt="" class="food-image">
-                    </div>
-                    <div class="food-information">
-                        <h2 class="food-name">Bruschetta with guacamole</h2>
-                        <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores. Nobis harum vitae voluptatibus porro magni quod distinctio, fugiat tempora.</p>
-                        <p class="food-weight">110g</p>
-                        <p class="food-price">14.99 USD</p>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image-container">
-                        <img src="Crispy-Polenta-Fries.jpg" alt="" class="food-image">
-                    </div>
-                    <div class="food-information">
-                        <h2 class="food-name">Crispy Polenta Fries</h2>
-                        <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores. Nobis harum vitae voluptatibus porro magni quod distinctio, fugiat tempora.</p>
-                        <p class="food-weight">110g</p>
-                        <p class="food-price">14.99 USD</p>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image-container">
-                        <img src="spinach-and-feta-stuffed-mushrooms.jpg" alt="" class="food-image">
-                    </div>
-                    <div class="food-information">
-                        <h2 class="food-name">spinach and feta stuffed mushrooms</h2>
-                        <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores. Nobis harum vitae voluptatibus porro magni quod distinctio, fugiat tempora.</p>
-                        <p class="food-weight">110g</p>
-                        <p class="food-price">14.99 USD</p>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image-container">
-                        <img src="Creamy-Pesto-Sauce-and-Ravioli.jpg" alt="" class="food-image">
-                    </div>
-                    <div class="food-information">
-                        <h2 class="food-name">Spinach and Ricotta Ravioli with Pesto Cream Sauce</h2>
-                        <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores. Nobis harum vitae voluptatibus porro magni quod distinctio, fugiat tempora.</p>
-                        <p class="food-weight">110g</p>
-                        <p class="food-price">14.99 USD</p>
-                    </div>
-                </div>
             </div>
-            <h1 class="food-section-heading">Soups</h1>
-            <p class="food-section-description">Soups, the comforting prelude to any meal, envelop diners in warmth and flavor, inviting them to savor each spoonful like a cherished memory.</p>
-            <div class="food-list" id="Salads">
-                <div class="food-card">
-                    <div class="food-image-container">
-                        <img src="roasted-tomato-soup.jpg" alt="" class="food-image">
-                    </div>
-                    <div class="food-information">
-                        <h2 class="food-name">Classic Tomato Soup</h2>
-                        <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores. Nobis harum vitae voluptatibus porro magni quod distinctio, fugiat tempora.</p>
-                        <p class="food-weight">110g</p>
-                        <p class="food-price">14.99 USD</p>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image-container">
-                        <img src="creamy-chicken-soup-with-rotisserie-chicken-recipe-beauty.jpg" alt="" class="food-image">
-                    </div>
-                    <div class="food-information">
-                        <h2 class="food-name">Chicken Noodle Soup</h2>
-                        <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores. Nobis harum vitae voluptatibus porro magni quod distinctio, fugiat tempora.</p>
-                        <p class="food-weight">110g</p>
-                        <p class="food-price">14.99 USD</p>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image-container">
-                        <img src="Spicy-Thai-Coconut-Curry-Soup.jpg" alt="" class="food-image">
-                    </div>
-                    <div class="food-information">
-                        <h2 class="food-name">Spicy Thai Coconut Soup</h2>
-                        <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores. Nobis harum vitae voluptatibus porro magni quod distinctio, fugiat tempora.</p>
-                        <p class="food-weight">110g</p>
-                        <p class="food-price">14.99 USD</p>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image-container">
-                        <img src="Classic-Minestrone-Soup.jfif" alt="" class="food-image">
-                    </div>
-                    <div class="food-information">
-                        <h2 class="food-name">Classic Minestrone Soup</h2>
-                        <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores. Nobis harum vitae voluptatibus porro magni quod distinctio, fugiat tempora.</p>
-                        <p class="food-weight">110g</p>
-                        <p class="food-price">14.99 USD</p>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image-container">
-                        <img src="Seafood.jpg" alt="" class="food-image">
-                    </div>
-                    <div class="food-information">
-                        <h2 class="food-name">Seefood chowder</h2>
-                        <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores. Nobis harum vitae voluptatibus porro magni quod distinctio, fugiat tempora.</p>
-                        <p class="food-weight">110g</p>
-                        <p class="food-price">14.99 USD</p>
-                    </div>
-                </div>
-            </div>
-          </div>
+            
         </div>
     </main>
     <footer>
@@ -414,9 +299,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="online-menu-example-searching-algorithm.js"></script>
-    <script src="online-menu-example-review-function.js"></script>
     <script src="online-menu-example-dropdown-function.js"></script>
-    <script src="online-menu-example-activity-checking.js"></script>
 </body>
 </html>
