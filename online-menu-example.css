@@ -1294,7 +1294,6 @@ main{
     margin: 0;
     color: var(--theme-colors-600);
     font-weight: 700;
-    background-color: var(--theme-colors-200);
 }
 
 .food-categories{
@@ -1304,7 +1303,6 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--theme-colors-200);
 }
 
 .food-category{
